@@ -1,0 +1,33 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Roboto Mono', monospace;
+  line-height:1;
+}
+
+
+body{
+  display:flex;
+  flex-direction: column;
+  min-height:100vh;
+  background-image:url('../img/background.png');
+}
+
+main{
+  flex-grow:1; /*push footer down*/
+  text-align:center;
+}
+
+main h1{
+  background:rgba(49, 119, 57,0.8);
+  padding:30px;
+  color:white;
+}
+
+footer{
+  background:rgba(0,0,0,0.9);
+  text-align:center;
+  color:#aaa;
+  font-size:0.7rem;
+  padding:7px;
+}
