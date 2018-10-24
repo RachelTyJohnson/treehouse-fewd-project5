@@ -1,0 +1,27 @@
+/*GENERAL STUFF*/
+$borderRadius: 5px;
+$maxWidth: 1000px;
+$breakpoint: 897px;
+
+/*COLORS*/
+$brandColor: #ccc;
+
+/*MIXINS*/
+@mixin createflexbox($display:flex, $direction:null, $wrap:null, $justify:null) {
+  display: $display;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  @content;
+}
+
+@mixin desktop{
+  @media (min-width:$breakpoint){
+    @content;
+  }
+}
+@mixin mobile{
+  @media (max-width:$breakpoint){
+    @content;
+  }
+}
