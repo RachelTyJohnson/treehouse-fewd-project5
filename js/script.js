@@ -14,4 +14,15 @@ $(document).ready(function() {
 			titleSrc:'title'
 		}
 	});
+
+	$("#searchbox").on("keyup", function() {
+	    let value = $(this).val().toLowerCase();
+	    $(".gallery-item a").filter(function() {
+				if ( $(this).attr('title').toLowerCase().indexOf(value) > -1 ){
+					$(this).parent().show();
+				} else {
+					$(this).parent().hide();
+				}
+	    });
+	  });
 });

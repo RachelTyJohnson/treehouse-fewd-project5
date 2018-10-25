@@ -17,24 +17,21 @@ body {
 }
 
 main {
+  border-top: #333 20px solid;
   flex-grow: 1;
   /*push footer down*/
   text-align: center;
   min-width: 100%;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.5);
   margin: 0 auto;
 }
 main h1 {
-  background: rgba(49, 119, 57, 0.8);
-  background-image: url("../img/header-background.jpg");
-  background-position: center center;
-  background-size: cover;
-  padding: 20px;
-  color: white;
+  padding-top: 10px;
+  color: #4d4d4d;
 }
 @media (min-width: 897px) {
   main h1 {
-    padding: 40px;
+    padding-top: 30px;
   }
 }
 
@@ -104,7 +101,7 @@ div.mfp-title {
 }
 
 footer {
-  background: rgba(0, 0, 0, 0.9);
+  background: #333;
   text-align: center;
   color: #aaa;
   font-size: 0.7rem;
